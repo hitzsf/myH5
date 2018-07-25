@@ -3,33 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>唐诗一首</title>
-    <style type="text/css">
-        body{
-            background-image:url("image/91.jpg");
-            background-size: 100%;
-            height: 100%;
-        }
-
-        p{
-            font-size: 26px;
-            color: white;
-        }
-        .author{
-            color: aquamarine;
-        }
-
-    </style>
 </head>
+<style type="text/css">
+    body {
+        background-image: url("image/91.jpg");
+        background-size: 100%;
+        height: 100%;
+    }
+    p {
+        font-size: 26px;
+        color: white;
+    }
+    .author {
+        width: 200px;
+        color: aquamarine;
+        position: relative;
+        /*animation: myfirst 5s linear  infinite alternate;*/
+        animation-name: myfirst;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+    }
+
+    /*div {*/
+    /*background:red;*/
+    /*position:relative;*/
+    /*animation: myfirst 3s infinite;*/
+    /*}*/
+
+    @keyframes myfirst {
+        0% {background: red;left: 0;top: 0;}
+        25% {background: yellow;left: 20%;top: 0;}
+        50% {background: blue;left: 40%;top: 0;}
+        75% {background: green;left: 60%;top: 0;}
+        100% {background: red;left: 80%;top: 0;}
+    }
+
+</style>
 
 <body>
+    <audio controls="controls" autoplay="autoplay">
+        <source src="sound/沧海一声笑.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
 
-<h1>静夜思</h1>
-<p class="author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐&nbsp;李白</p>
-<p >窗前明月光，</p>
-<p >疑是地上霜。</p>
-<p >举头望明月，</p>
-<p>低头思故乡。</p>
-<br><br>
-<p class="author"> 周周真cool！</p>
+    <h1>静夜思</h1>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唐&nbsp;李白</p>
+    <p>窗前明月光，</p>
+    <p>疑是地上霜。</p>
+    <p>举头望明月，</p>
+    <p>低头思故乡。</p>
+    <br><br>
+    <p class="author"> 周周真cool！</p>
 </body>
 </html>
